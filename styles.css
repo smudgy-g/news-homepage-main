@@ -1,0 +1,25 @@
+:root {
+    --SoftOrange: hsl(35, 77%, 62%);
+    --SoftRed: hsl(5, 85%, 63%);
+    --OffWhite: hsl(36, 100%, 99%);
+    --GrayishBlue: hsl(233, 8%, 79%);
+    --DarkGrayishBlue: hsl(236, 13%, 42%);
+    --VeryDarkBlue: hsl(240, 100%, 5%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: var(--DarkGrayishBlue);
+    background-color: var(--OffWhite);
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+    font-size: 2.5rem;
+}
+
+.logo-wrapper {
+    display: flexbox;
+}
