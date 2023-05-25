@@ -8,21 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-
+<div class="overlay display-overlay"></div>
 <header>
     <div class="logo-wrapper">
       <img class="logo-img" src="/assets/images/logo.svg" alt="W. Logo">
     </div>
-    <nav>
+    <nav id="nav-menu">
+      <img id="close-menu" src="/assets/images/icon-menu-close.svg" alt="close menu">
       <ul>
         <li>Home</li>
         <li>New</li>
@@ -31,6 +30,9 @@
         <li>Categories</li>
       </ul>
   </nav>
+  <div id="open-menu">
+    <img src="/assets/images/icon-menu.svg" alt="menu">
+  </div>
 </header>
 <div class="hero-section">
   <div class="blog-section">
@@ -45,7 +47,7 @@
           We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?
         </p>
-        <button>READ MORE</button>
+        <button class="button-red">READ MORE</button>
       </div>
     </article>
   </div>
@@ -101,5 +103,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Adam Griffiths</a>.
   </div>
+  <script src="/index.js"></script>
 </body>
 </html>
