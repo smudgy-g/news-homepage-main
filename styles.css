@@ -17,7 +17,6 @@ html {
     font-size: 15px;
 }
 body {
-    overflow-x: hidden;
     background-color: var(--OffWhite);
 }
 
@@ -27,6 +26,7 @@ p {
 }
 
 header {
+    overflow-x: hidden;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
