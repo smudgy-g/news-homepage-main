@@ -17,9 +17,13 @@ html {
     font-size: 15px;
 }
 body {
-    color: var(--DarkGrayishBlue);
+    
     background-color: var(--OffWhite);
-    line-height: 1.5;
+}
+
+p {
+    line-height: 1.8;
+    color: var(--DarkGrayishBlue);
 }
 
 header {
@@ -29,8 +33,23 @@ header {
     padding: 1.2rem;
 }
 
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    color: var(--DarkGrayishBlue);
+}
+
 header nav {
     display: none;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+}
+header nav ul li:hover {
+    color: var(--SoftOrange)
 }
 
 .hero-section {
@@ -45,7 +64,6 @@ h1 {
     font-weight: 700;
     color: var(--VeryDarkBlue);
     font-size: 2.5rem;
-    line-height: 2.75rem;
 }
 
 ul {
@@ -61,12 +79,19 @@ button {
     background-color: var(--SoftRed);
     color: var(--OffWhite);
     padding: 1rem 2.5rem;
-    letter-spacing: .25rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--VeryDarkBlue);
+    transition: all 0.3s ease-in-out;
 }
 
 .new-section {
     background-color: var(--VeryDarkBlue);
-    margin: 1.2rem;
+    margin-top: 3.75rem;
     padding: 1.2rem;
     color: var(--GrayishBlue);
 }
@@ -84,10 +109,15 @@ hr {
     margin: 1.8rem 0;
 }
 
-h3 {
+.new-section h3 {
     color: var(--OffWhite);
     margin-bottom: .6rem;
     font-size: 1.5;
+    cursor: pointer;
+}
+
+.new-section h3:hover {
+    color: var(--SoftOrange);
 }
 
 h4 {
@@ -117,4 +147,54 @@ span {
     font-size: 2rem;
     color: var(--GrayishBlue);
     font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 2.5rem 6rem;
+    }
+    header nav {
+        display:contents;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .new-section {
+        margin: 0;
+    }
+
+    .blog-section {
+        grid-column: span 2;
+    }
+
+    .blog-section article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .blog-section article h1 {
+        font-size: 3.2rem;
+    }
+
+    .blog-description {
+        align-self: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
 }
