@@ -18,7 +18,7 @@ html {
 }
 body {
     background-color: var(--OffWhite);
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 p {
@@ -27,7 +27,7 @@ p {
 }
 
 header {
-    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
