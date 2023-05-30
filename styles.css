@@ -15,10 +15,10 @@
 html {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
+    overflow-x: hidden;
 }
 body {
     background-color: var(--OffWhite);
-    overflow-y: hidden;
 }
 
 p {
