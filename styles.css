@@ -15,7 +15,6 @@
 html {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
-    overflow-x: hidden;
 }
 body {
     background-color: var(--OffWhite);
@@ -62,6 +61,7 @@ header nav {
     top: 0;
     bottom: 0;
     transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
 }
 
 header nav.open {
