@@ -17,7 +17,6 @@ html {
     font-size: 15px;
 }
 body {
-    overflow-y: hidden;
     background-color: var(--OffWhite);
 }
 
@@ -57,15 +56,16 @@ header nav ul {
 }
 
 header nav {
+    display: hidden;
     position: absolute;
     right: -20rem;
     top: 0;
     bottom: 0;
     transition: all 0.3s ease-in-out;
-    overflow-x: hidden;
 }
 
 header nav.open {
+    display: block;
     position: fixed;
     right: 0;
     width: 70vw;
