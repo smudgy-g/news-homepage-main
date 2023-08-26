@@ -42,11 +42,11 @@ Users should be able to:
 
 ### What I learned
 
-This was a great project to brush up on CSS styling using Grid and Flexbox before starting a SOftware Deevelopment course. I particularly enjoyed adding the menu functionality with JQuery and was quite pleased with the final outcome.
+This was a great project to brush up on CSS styling using Grid and Flexbox before starting a SOftware Development course. I particularly enjoyed adding the menu functionality with JQuery and was quite pleased with the final outcome.
 
 ### Continued development
 
-Further animations to menu buttons would be a nice feature (ie. spnning close menu button or increase scale of the menu items on hover)
+Further animations to menu buttons would be a nice feature (ie. spinning close menu button or increasing scale of the menu items on hover)
 
 If there are any suggestions, I'd be happy to see and hear them!
 
